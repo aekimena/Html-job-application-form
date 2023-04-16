@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job application form</title>
+  </head>
+  <body>
+    <form action="">
+        <h1>Job Application Form</h1>
+        <fieldset>
+      <fieldset>
+        <legend>Personal information</legend>
+        <p>
+          <label for="firstname">First Name:</label>
+          <input
+            name="firstname"
+            type="text"
+            id="firstname"
+            placeholder="First Name"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          <label for="lastname">Last Name:</label>
+          <input
+            name="lastname"
+            type="text"
+            id="lastname"
+            placeholder="Last Name"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p>
+          <label for="dob">Date of Birth:</label>
+          <input name="dob" type="date" id="dob" value="1970-01-01"/>
+        </p>
+        <p>
+          <label for="address">Address:</label>
+          <input
+            style="width: 300px; height: 40px"
+            type="text"
+            name="address"
+            id="address"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="phone">Phone:</label>
+          <input type="number" name="phone" id="phone" />
+        </p>
+        <p>
+          <label for="position">Position Applied</label>
+          <input type="text" namme="position" id="position" style="width: 300px" required />
+        </p>
+        <p>
+          <label for="employment">Employment Desired:</label>
+          <p>
+          Full-Time<input type="radio" name="employment" id="fulltime" />
+          Part-Time<input type="radio" name="employment" id="parttime" />
+          </p>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Education <span style="font-style: italic">(most recent)</span>
+        </legend>
+        <p>
+          <label for="schoolname">School Name:</label>
+          <input type="text" name="schoolname" id="schoolname" style="width: 300px" required />
+        </p>
+        <p>
+          <label for="schoolfrom">From:</label>
+          <input type="text" name="schoolfrom" id="schoolfrom" />
+        </p>
+        <p>
+          <label for="schoolto">To:</label>
+          <input type="text" name="schoolto" id="schoolto" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Work Experience <span style="font-style: italic">(most recent)</span>
+        </legend>
+        <p>
+          <label for="companyname">Company Name:</label>
+          <input type="text" name="companyname" id="companyname" style="width: 300px" />
+        </p>
+        <p>
+          <label for="work_position">Position:</label>
+          <input type="text" name="work_position" id="work_position"/>
+        </p>
+        <p>
+          <label for="work_from">From:</label>
+          <input type="text" name="work_from" id="work_from"/>
+        </p>
+        <p>
+          <label for="work_to">To:</label>
+          <input type="text" name="work_to" id="work_to"/>
+        </p>
+        <p>
+          <label for="reason">Reason for Leaving:</label>
+          <input type="text" name="reason" id="reason" style="width: 300px" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Schedule Interview</legend>
+        <p>
+          <label for="interview_date">Preferred Interview Date:</label>
+          <input
+            type="date"
+            name="interview_date"
+            id="interview_date"
+            min="2023-01-01"
+            max="2023-01-10"
+            required
+          />
+        </p>
+        <p>
+          <label for="interview_time">Preferred Interview Time:</label>
+          <select id="interview_time" name="interview_time">
+            <option value="">Select Time</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+          </select>
+        </p>
+      </fieldset>
+      <button type="submit" id="submit" value="submit">submit</button>
+        </fieldset>
+    </form>
+  </body>
+</html>
